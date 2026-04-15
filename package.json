@@ -1,0 +1,14 @@
+{
+  "name": "lombard-poc-72762",
+  "version": "2.0.0",
+  "scripts": {
+    "test:invariants":  "hardhat test test/ProveInvariants.js --network hardhat",
+    "test:poc":         "hardhat test test/BasculeBypass.test.js --network hardhat",
+    "test:primitives":  "hardhat test test/ExploitPrimitive.js --network hardhat",
+    "test:all":         "hardhat test test/ProveInvariants.js test/BasculeBypass.test.js test/ExploitPrimitive.js --network hardhat"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.28.6"
+  }
+}
